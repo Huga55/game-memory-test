@@ -1,0 +1,46 @@
+
+.row {
+    margin: 20px 0;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--color-gray);
+}
+
+.cell {
+    position: relative;
+    text-align: center;
+}
+
+.cell_active::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    top: 50%;
+    margin-top: -15px;
+    background: var(--color-green);
+    border-radius: 50%;
+    opacity: .7;
+}
+
+.numb {
+    width: 5%;
+}
+
+.date {
+    width: 20%;
+}
+
+.name {
+    width: 55%;
+    text-align: left;
+}
+
+.time {
+    width: 20%;
+    text-align: right;
+}

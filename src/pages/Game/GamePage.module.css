@@ -1,0 +1,44 @@
+.cards {
+    max-width: 564px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.time {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.window {
+    max-width: 300px;
+    padding: 15px;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    top: 30%;
+    background: var(--color-white);
+    box-shadow: 1px 1px 3px 3px var(--color-shadow);
+    border-radius: 10px;
+    transform: translateY(-1000px);
+    transition: .3s;
+}
+
+.window_active {
+    transform: translateY(0px);
+}
+
+.title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.button {
+    width: 100%;
+    height: 30px;
+}
