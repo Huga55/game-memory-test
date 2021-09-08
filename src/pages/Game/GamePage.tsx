@@ -71,11 +71,10 @@ const GamePage = () => {
             startGame();
         }, 1000);
 
-        setTimeGame(prevState => ({
+        setTimeGame({
             id: timerId,
-            seconds: prevState.seconds++
-        }));
-        console.log("TIME");
+            seconds: timeGame.seconds++
+        });
     }
 
     const stopGame = () => {

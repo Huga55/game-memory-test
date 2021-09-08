@@ -12,13 +12,13 @@ const ResultPage = () => {
 
     const history = useHistory();
 
-    const gameAgain = () => {
+    const playAgain = () => {
         history.push("/");
     }
 
     return(
         <div className={style.wrapper}>
-            <Button className={style.button} onClick={gameAgain}>Играть еще</Button>
+            <Button className={style.button} onClick={playAgain}>Играть еще</Button>
             <div className={style.table}>
                 <TableRow index="Номер" name="Ник" time="Затраченное время" date="Дата" isHead  key="id-1"/>
                 {results.sort((a, b) => a.time - b.time).map((r, index) =>
